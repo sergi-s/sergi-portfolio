@@ -46,7 +46,7 @@ export const experiencesData = [
     icon: React.createElement(FaNodeJs),
     date: "9/2022 - present",
   },
-] as const;
+];
 
 export const projectsData = [
   {
