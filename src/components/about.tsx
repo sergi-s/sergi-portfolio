@@ -18,8 +18,9 @@ export default function About() {
         >
             <SectionHeading>About Me</SectionHeading>
             <p className="mb-3">
-                I'm a full-stack software engineer with a focus on the <span className="font-medium">backend</span>.{" "}
-                I graduated from Alexandria University with a GPA of 3.78.{" "}
+                I'm a full-stack software engineer with a focus on the <span className="font-medium">backend</span>.<br></br> {" "}
+                I am currently a <b>master's</b> Student of Computer Science at Memorial University of NewFoundland, <br></br> {" "}
+                I graduated from Alexandria University with a GPA of 3.78. Degree in Computer Science.<br></br> {" "}
                 {/* I enjoy working on the behind-the-scenes of websites and applications, making sure they run smoothly and efficiently. */}
                 My passion lies in solving complex problems with code,{" "}
                 {/* and I'm always eager to learn and adapt to new challenges in the world of software development */}
@@ -29,7 +30,7 @@ export default function About() {
                 </span>.
                 I am also familiar with Graphql, tRPC and gRPC. I am always looking to
                 learn new technologies. I am currently looking for a{" "}
-                <span className="font-medium">full-time position</span> as a software developer.
+                <span className="font-medium"><b>Co-op term</b></span> as a software developer.
             </p>
 
             <p>

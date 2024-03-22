@@ -1,5 +1,5 @@
 import React from "react";
-import { FaNodeJs, FaOpencart } from "react-icons/fa";
+import { FaNodeJs, FaOpencart, FaWordpressSimple } from "react-icons/fa";
 import salahly from "@/public/salahly.png"
 
 export const links = [
@@ -19,42 +19,59 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
-  // {
-  //   name: "Experience",
-  //   hash: "#experience",
-  // },
+  {
+    name: "Experience",
+    hash: "#experience",
+  },
   {
     name: "Contact",
     hash: "#contact",
   },
 ] as const;
 
-// export const experiencesData = [
-//   {
-//     title: "Backend developer Intern",
-//     location: "Alex, Egypt",
-//     description:
-//       "I worked as a backend intern for 3 months. working on a marketplace using OpenCart php.",
-//     icon: React.createElement(FaOpencart),
-//     date: "6/2022 - 9/2022",
-//   },
-//   {
-//     title: "Backend developer Intern",
-//     location: "Alex, Egypt",
-//     description:
-//       "I'm now a backend developer. My stack includes TypeScript, Prisma and Postgres. occasional involvement in Nextjs, react Native, POS systems.",
-//     icon: React.createElement(FaNodeJs),
-//     date: "9/2022 - present",
-//   },
-// ];
+export const experiencesData = [
+  {
+    title: "Backend developer Intern",
+    location: "Techhive",
+    description:
+      "I worked as a backend intern for 3 months. working on a marketplace using OpenCart php.",
+    icon: React.createElement(FaOpencart),
+    date: "6/2022 - 9/2022",
+  },
+  {
+    title: "Backend developer",
+    location: "Techhive",
+    description:
+      "Backend developer. My stack includes TypeScript, Prisma and Postgres. occasional involvement in Nextjs, react Native, POS/embedded systems.",
+    icon: React.createElement(FaNodeJs),
+    date: "9/2022 - 12/2023",
+  },
+  {
+    title: "Full Stack developer",
+    location: "Memorial University of newfoundland ",
+    description:
+      "Full stack developer, using wordpress, Php, Javascript, HTML and CSS, creating custom plugins",
+    icon: React.createElement(FaWordpressSimple),
+    date: "3/2024 - Present",
+  },
+].reverse();
 
 export const projectsData = [
+  {
+    title: "AI Algorithm Techniques Assignments",
+    description:
+      "In my Master's program in Computer Science (CS) at 6980, under Prof. David Churchill, I enjoyed developing various complex algorithms including A*, IDDFS, alpha-beta pruning, negamax, transposition tables, game theory, connect 4 game, and various searching algorithms, as well as generic algorithms, cross-overs, and mutations",
+    tags: ["Searching Algorithms", "A*", "optimizations", "NegaMax", "generic algorithms"],
+    imageUrl: 'https://i.ibb.co/F3766ST/BFS.png',
+    redirectTo: 'https://youtu.be/RkOh7328P44'
+  },
   {
     title: "Salahly",
     description:
       "I worked as a full-stack developer on my graduation project for 5 months. Users can request roadside assistance.",
     tags: ["Flutter", "RTDB", "Firebase", "Provider", "Cloud functions"],
-    imageUrl: salahly
+    imageUrl: salahly,
+    redirectTo: 'https://github.com/sergi-s/Salahly-client-application'
   }
 ] as const;
 
@@ -62,12 +79,15 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "Php",
+  "WordPress",
   "OpenCart",
   "Laravel",
   "React",
   "Next.js",
   "Redis",
   "Node.js",
+  "NestJS",
+  "Flutter",
   "Git",
   "GitHub Action",
   "Prisma",
