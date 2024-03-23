@@ -25,7 +25,7 @@ export default function Experience() {
 export function ExperienceAsVerticalTimeline(theme: any, experiences: {
     title: string, location: string, description: string, icon: any, date: string
 }[]): ReactNode {
-    return experiences.map((item, index) => (
+    const elements = experiences.map((item, index) => (
         <VerticalTimelineElement
             key={index}
             contentStyle={{
@@ -46,5 +46,7 @@ export function ExperienceAsVerticalTimeline(theme: any, experiences: {
             <p className='font-normal !mt-0 '>{item.location}</p>
             <p className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>{item.description}</p>
         </VerticalTimelineElement>
-    ))
+    ));
+
+    return React.Children.toArray(elements);
 }
