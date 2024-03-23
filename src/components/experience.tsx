@@ -9,18 +9,14 @@ import { experiencesData } from '@/lib/data';
 import { useTheme } from '@/context/theme-context';
 
 export default function Experience() {
-    // @ts-ignore
     const { ref } = useSectionInView("Experience")
     const { theme } = useTheme()
     return (
         <section id="experience" ref={ref} className='scroll-mt-28 mb-28 sm:mb-40'>
             <SectionHeading>My Experience</SectionHeading>
-            {/* // @ts-ignore */}
             <VerticalTimeline lineColor=''>
                 {ExperienceAsVerticalTimeline(theme, experiencesData)}
             </VerticalTimeline>
-
-
         </section>
     )
 }
@@ -29,7 +25,6 @@ export default function Experience() {
 export function ExperienceAsVerticalTimeline(theme: any, experiences: {
     title: string, location: string, description: string, icon: any, date: string
 }[]) {
-    //@ts-ignore
     return experiences.map((item, index) => (
         <VerticalTimelineElement
             key={index}
