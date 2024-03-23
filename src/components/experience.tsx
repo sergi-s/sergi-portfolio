@@ -15,7 +15,7 @@ export default function Experience() {
         <section id="experience" ref={ref} className='scroll-mt-28 mb-28 sm:mb-40'>
             <SectionHeading>My Experience</SectionHeading>
             <VerticalTimeline lineColor=''>
-                {(ExperienceAsVerticalTimeline(theme, experiencesData) as ReactNode[])}
+                {ExperienceAsVerticalTimeline(theme, experiencesData)}
             </VerticalTimeline>
         </section>
     )
@@ -24,7 +24,7 @@ export default function Experience() {
 
 export function ExperienceAsVerticalTimeline(theme: any, experiences: {
     title: string, location: string, description: string, icon: any, date: string
-}[]) {
+}[]): ReactNode[] {
     return experiences.map((item, index) => (
         <VerticalTimelineElement
             key={index}
