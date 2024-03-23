@@ -24,7 +24,7 @@ export default function Experience() {
 
 export function ExperienceAsVerticalTimeline(theme: any, experiences: {
     title: string, location: string, description: string, icon: any, date: string
-}[]): ReactNode[] {
+}[]): ReactNode {
     return experiences.map((item, index) => (
         <VerticalTimelineElement
             key={index}
