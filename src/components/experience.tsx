@@ -15,7 +15,7 @@ export default function Experience() {
         <section id="experience" ref={ref} className='scroll-mt-28 mb-28 sm:mb-40'>
             <SectionHeading>My Experience</SectionHeading>
             <VerticalTimeline lineColor=''>
-                {ExperienceAsVerticalTimeline(theme, experiencesData)}
+                {(ExperienceAsVerticalTimeline(theme, experiencesData) as ReactNode[])}
             </VerticalTimeline>
         </section>
     )
