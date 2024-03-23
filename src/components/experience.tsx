@@ -1,6 +1,6 @@
 //@ts-ignore
 "use client"
-import React from 'react'
+import React, { ReactNode } from 'react'
 import SectionHeading from './section-heading'
 import { useSectionInView } from '@/lib/hooks'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -36,7 +36,7 @@ export default function Experience() {
                         <p className='font-normal !mt-0 '>{experience.location}</p>
                         <p className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>{experience.description}</p>
                     </VerticalTimelineElement>
-                ))}
+                )) as ReactNode}
             </VerticalTimeline>
 
         </section>
