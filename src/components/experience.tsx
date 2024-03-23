@@ -9,12 +9,13 @@ import { experiencesData } from '@/lib/data';
 import { useTheme } from '@/context/theme-context';
 
 export default function Experience() {
-
+    // @ts-ignore
     const { ref } = useSectionInView("Experience")
     const { theme } = useTheme()
     return (
         <section id="experience" ref={ref} className='scroll-mt-28 mb-28 sm:mb-40'>
             <SectionHeading>My Experience</SectionHeading>
+            {/* // @ts-ignore */}
             <VerticalTimeline lineColor=''>
                 {ExperienceAsVerticalTimeline(theme, experiencesData)}
             </VerticalTimeline>
