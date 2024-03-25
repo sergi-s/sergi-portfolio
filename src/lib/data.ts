@@ -34,7 +34,9 @@ export const experiencesData = [
     title: "Backend developer Intern",
     location: "Techhive",
     description:
-      "I worked as a backend intern for 3 months. working on a marketplace using OpenCart php.",
+      `I worked as a Full-stack intern. working on a global marketplace using OpenCart php, 
+      engineered a simple recommendation systems for frequently  bought items, optimized a search algorithm to get minimum shipping 
+      costs for a marketplace on OpenCart`,
     icon: React.createElement(FaOpencart),
     date: "6/2022 - 9/2022",
   },
@@ -42,7 +44,10 @@ export const experiencesData = [
     title: "Backend developer",
     location: "Techhive",
     description:
-      "Backend developer. My stack includes TypeScript, Prisma and Postgres. occasional involvement in Nextjs, react Native, POS/embedded systems.",
+      `
+      Participated in varied projects involving diverse technologies: developed a low- code platform with Next.js(appasap.ai),
+Node.js, Prisma, and AWS; contributed to a streaming service with Nest.js and AWS infrastructure; and crafted an access control system 
+      integrating embedded systems, Node.js, and er80 QR scanners.`,
     icon: React.createElement(FaNodeJs),
     date: "9/2022 - 12/2023",
   },

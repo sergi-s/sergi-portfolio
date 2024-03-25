@@ -1,6 +1,6 @@
 // @ts-nocheck
 "use client"
-import React, { Fragment } from 'react'
+import React from 'react'
 import SectionHeading from './section-heading'
 import { useSectionInView } from '@/lib/hooks'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -12,7 +12,6 @@ export default function Experience() {
 
     const { ref } = useSectionInView("Experience")
     const { theme } = useTheme()
-    const experience = experiencesData[0]
     return (
         <section id="experience" ref={ref} className='scroll-mt-28 mb-28 sm:mb-40'>
             <SectionHeading>My Experience</SectionHeading>
