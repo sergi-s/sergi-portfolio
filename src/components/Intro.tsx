@@ -10,6 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { getTimeDifference } from "@/lib/utils";
+import posthog from "posthog-js";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home")
@@ -96,7 +97,11 @@ export default function Intro() {
           download
         >
           Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" onClick={() => {
+            posthog.capture('A7mosCLicked', { property: 'CV' });
+            console.log('a7mos clicked')
+          }
+          } />
         </a>
 
         <a
