@@ -68,7 +68,7 @@ export const projectsData = [
       "In my Master's program in Computer Science (CS) at 6980, under Prof. David Churchill, I enjoyed developing various complex algorithms including A*, IDDFS, alpha-beta pruning, negamax, transposition tables, game theory, connect 4 game, and various searching algorithms, as well as generic algorithms, cross-overs, and mutations",
     tags: ["Searching Algorithms", "A*", "optimizations", "NegaMax", "generic algorithms"],
     imageUrl: 'https://i.ibb.co/F3766ST/BFS.png',
-    redirectTo: 'https://youtu.be/RkOh7328P44'
+    redirectTo: 'https://github.com/sergi-s/Special-Topics-in-Artificial-Intelligence'
   },
   {
     title: "Salahly",
