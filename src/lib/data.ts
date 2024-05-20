@@ -63,6 +63,22 @@ Node.js, Prisma, and AWS; contributed to a streaming service with Nest.js and AW
 
 export const projectsData = [
   {
+    title: "Seplling Practice 2",
+    description:
+      "Created a spelling practice for multiple languages using LLMs to generate new sentences based on the user's performance and preferred topic",
+    tags: ["LLMs", "Ollama", "Nextjs", "typescript", "prisma", "mongodb"],
+    imageUrl: 'https://i.ibb.co/MDdD1xZ/Screenshot-from-2024-05-20-18-37-41.png',
+    redirectTo: 'https://github.com/sergi-s/spelling-practice-2'
+  },
+  {
+    title: "AI Algorithm Techniques Assignments",
+    description:
+      "A simple map for skiiers, using dijkstra algorithm to find a path between 2 points, minimizing for speed, difficulty and length",
+    tags: ["dijkstra algorithm", "Nodejs", "Reactjs", "prisma", "mongodb", "leaflet"],
+    imageUrl: 'https://github.com/coco-kit/software-engineering-group-project/raw/main/img/selected_path.png',
+    redirectTo: 'https://ski-resort-map.vercel.app/'
+  },
+  {
     title: "AI Algorithm Techniques Assignments",
     description:
       "In my Master's program in Computer Science (CS) at 6980, under Prof. David Churchill, I enjoyed developing various complex algorithms including A*, IDDFS, alpha-beta pruning, negamax, transposition tables, game theory, connect 4 game, and various searching algorithms, as well as generic algorithms, cross-overs, and mutations",
