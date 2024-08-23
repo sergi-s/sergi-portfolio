@@ -63,7 +63,14 @@ Node.js, Prisma, and AWS; contributed to a streaming service with Nest.js and AW
 
 export const projectsData = [
   {
-    title: "Seplling Practice 2",
+    title: "Credit Card Fraud detection",
+    description: "Detect Fraudulent Credit Card transactions using different Machine Learning models and compare performances",
+    tags: ["Python", "ML", "SMOTE", "Pandas", "numpy", "keras", 'matplotlib'],
+    imageUrl: 'https://i.ibb.co/ZJnXMPx/Screenshot-2024-08-23-at-12-49-25-PM.png',
+    redirectTo: 'https://github.com/sergi-s/Credit-Card-fraud-detection'
+  },
+  {
+    title: "Spelling Practice 2",
     description:
       "Created a spelling practice for multiple languages using LLMs to generate new sentences based on the user's performance and preferred topic",
     tags: ["LLMs", "Ollama", "Nextjs", "typescript", "prisma", "mongodb"],
