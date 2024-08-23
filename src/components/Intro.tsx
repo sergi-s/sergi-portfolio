@@ -67,7 +67,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Sergi.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        {/* <span className="font-bold underline">{getTimeDifference("2022-06-05")}</span> */} 3 years
+        <span className="font-bold underline">{getTimeDifference("2022-06-05")}</span>
         {" "} of experience. I enjoy
         building <span className="italic">APIs & Web apps</span>.
         My focus is{" "} <span className="underline">Node (express)</span>.
