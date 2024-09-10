@@ -34,7 +34,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://avatars.githubusercontent.com/u/52626795?v=4"
+              src="https://i.ibb.co/fF0JJB6/IMG-20210404-100704.jpg"
               alt="Sergi portrait"
               width="192"
               height="192"
