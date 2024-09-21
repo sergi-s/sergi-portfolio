@@ -78,11 +78,11 @@ export const projectsData = [
     redirectTo: 'https://github.com/sergi-s/spelling-practice-2'
   },
   {
-    title: "AI Algorithm Techniques Assignments",
+    title: "Ski Resort map",
     description:
       "A simple map for skiiers, using dijkstra algorithm to find a path between 2 points, minimizing for speed, difficulty and length",
     tags: ["dijkstra algorithm", "Nodejs", "Reactjs", "prisma", "mongodb", "leaflet"],
-    imageUrl: 'https://github.com/coco-kit/software-engineering-group-project/raw/main/img/selected_path.png',
+    imageUrl: 'https://i.ibb.co/0CfKZMY/Screenshot-2024-09-21-at-2-09-46-PM.png',
     redirectTo: 'https://ski-resort-map.vercel.app/'
   },
   {
