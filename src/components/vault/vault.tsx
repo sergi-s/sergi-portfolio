@@ -95,7 +95,7 @@ export default function Vault() {
       <h1 className="text-2xl font-bold">Password Vault (Hidden)</h1>
       <p className="text-sm opacity-70">All encryption & decryption happens locally in your browser using AES-GCM with PBKDF2 derived key (100k iterations, 256-bit). Store only encrypted blobs in DB.</p>
 
-      <section className="space-y-2 border p-4 rounded">
+      <section className="space-y-2 panel p-4">
         <h2 className="font-semibold">Owner Setup & Add Entry</h2>
         <div className="grid md:grid-cols-2 gap-4">
           <div>
@@ -119,10 +119,10 @@ export default function Vault() {
             <input className="w-full input" value={allowedViewersInput} onChange={e => setAllowedViewersInput(e.target.value)} placeholder="viewer1@example.com, viewer2@example.com" />
           </div>
         </div>
-        <button disabled={adding} onClick={addEntry} className="btn mt-2 px-4 py-2 bg-blue-600 text-white rounded disabled:opacity-50">{adding ? 'Adding...' : 'Add Encrypted Entry'}</button>
+        <button disabled={adding} onClick={addEntry} className="btn-primary mt-2 px-4 py-2">{adding ? 'Adding...' : 'Add Encrypted Entry'}</button>
       </section>
 
-      <section className="space-y-2 border p-4 rounded">
+      <section className="space-y-2 panel p-4">
         <h2 className="font-semibold">View Entries</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <div>
@@ -139,17 +139,17 @@ export default function Vault() {
         </div>
         <div className="space-y-2">
           {entries.map(e => (
-            <div key={e._id} className="border rounded p-3">
+            <div key={e._id} className="panel p-3 border border-gray-200 dark:border-gray-700">
               <div className="flex justify-between items-center">
                 <div>
                   <div className="font-medium">{e.label}</div>
-                  <div className="text-xs opacity-60">Owner: {e.ownerEmail}</div>
+                  <div className="muted">Owner: {e.ownerEmail}</div>
                 </div>
                 <div>
                   {decrypted[e._id] ? (
                     <span className="font-mono text-sm">{decrypted[e._id]}</span>
                   ) : (
-                    <button onClick={() => doDecrypt(e._id, e.encrypted)} className="btn text-sm px-3 py-1 bg-purple-600 text-white rounded disabled:opacity-50" disabled={decryptingId === e._id}>{decryptingId === e._id ? 'Decrypting...' : 'Decrypt'}</button>
+                    <button onClick={() => doDecrypt(e._id, e.encrypted)} className="btn-accent text-sm px-3 py-1" disabled={decryptingId === e._id}>{decryptingId === e._id ? 'Decrypting...' : 'Decrypt'}</button>
                   )}
                 </div>
               </div>
