@@ -1,5 +1,5 @@
 import React from "react";
-import { FaNodeJs, FaOpencart, FaWordpressSimple } from "react-icons/fa";
+import { FaNodeJs, FaOpencart, FaWordpressSimple, FaShieldAlt } from "react-icons/fa";
 import salahly from "@/public/salahly.png"
 
 export const links = [
@@ -59,6 +59,14 @@ Node.js, Prisma, and AWS; contributed to a streaming service with Nest.js and AW
     icon: React.createElement(FaWordpressSimple),
     date: "3/2024 - Present",
   },
+  {
+    title: "Software Developer",
+    location: "Nasdaq Verafin",
+    description:
+      "Build pipelines to ingest and transform Faster Payments/wire transactions for downstream product teams using Java, Scala and SQL.",
+    icon: React.createElement(FaShieldAlt),
+    date: "1/2025 - Present",
+  },
 ].reverse();
 
 export const projectsData = [
@@ -106,6 +114,8 @@ export const projectsData = [
 export const skillsData = [
   "JavaScript",
   "TypeScript",
+  "Java",
+  "Scala",
   "Php",
   "WordPress",
   "OpenCart",
@@ -120,6 +130,9 @@ export const skillsData = [
   "GitHub Action",
   "Prisma",
   "SQL",
+  "DynamoDB",
+  "Spark",
+  "EMR",
   "NoSQL",
   "Postgres",
   "MongoDB",

@@ -66,11 +66,9 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Sergi.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold underline">{getTimeDifference("2022-06-05")}</span>
-        {" "} of experience. I enjoy
-        building <span className="italic">APIs & Web apps</span>.
-        My focus is{" "} <span className="underline">Node (express)</span>.
+        <span className="font-bold">Software Developer at Nasdaq Verafin</span>, fighting financial crime.
+        <br /> I recently completed my Master's in Computer Science.
+        <br /> My core stack is primarily <span className="underline">Java, Scala & SQL</span>.
       </motion.h1>
 
       <motion.div

@@ -18,19 +18,13 @@ export default function About() {
         >
             <SectionHeading>About Me</SectionHeading>
             <p className="mb-3">
-                I'm a full-stack software engineer with a focus on the <span className="font-medium">backend</span>.<br></br> {" "}
-                I am currently a <b>master's</b> Student of Computer Science at Memorial University of NewFoundland, <br></br> {" "}
-                I graduated from Alexandria University with a GPA of 3.78. Degree in Computer Science.<br></br> {" "}
-                {/* I enjoy working on the behind-the-scenes of websites and applications, making sure they run smoothly and efficiently. */}
-                My passion lies in solving complex problems with code,{" "}
-                {/* and I'm always eager to learn and adapt to new challenges in the world of software development */}
-                My core stack is{" "}
-                <span className="font-medium">
-                    TypeScript, Node.js, Prisma and React
-                </span>.
-                I am also familiar with Graphql, tRPC and gRPC. I am always looking to
-                learn new technologies. I am currently looking for a{" "}
-                <span className="font-medium"><b>Co-op term</b></span> as a software developer.
+                I'm a software developer with a focus on the <span className="font-medium">backend</span>.
+                <br /> I recently completed my Master's in Computer Science at Memorial University of Newfoundland.
+                <br /> I graduated from Alexandria University with a GPA of 3.78 (B.Sc. in Computer Science).
+                My passion lies in solving complex problems with code.
+                <br /> My current role is at Nasdaq Verafin where I work on systems to fight financial crime.
+                <br /> My core stack is primarily <span className="font-medium">Java, Scala, and SQL</span>.
+                I also have experience with <span className="font-medium">TypeScript, Node.js, Prisma, and React</span>, and familiarity with GraphQL, tRPC and gRPC.
             </p>
 
             <p>
