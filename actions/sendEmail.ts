@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export const sendEmail = async (formData: FormData) => {
+export const sendEmail = async (formData: FormData): Promise<{ error: string } | any> => {
   const message = formData.get("message");
   const email = formData.get("email");
 
