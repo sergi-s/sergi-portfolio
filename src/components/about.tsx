@@ -20,7 +20,7 @@ export default function About() {
             <p className="mb-3">
                 I'm a <span className="font-medium">backend engineer</span> focused on building scalable systems and data infrastructure. 
                 Currently at Nasdaq Verafin designing data pipelines for fraud detection processing millions of transactions daily.
-                <br /> My expertise spans <span className="font-medium">backend architecture, and data engineering</span> — 
+                <br /> My expertise spans <span className="font-medium">backend architecture, and data engineering</span> - 
                 with strong proficiency in <span className="font-medium">Java, Scala, SQL, Node.js, and AWS</span>.
                 <br /> I completed my Master's in Computer Science at Memorial University and graduated from Alexandria University with 3.78 GPA.
                 <br /> I'm passionate about solving complex technical challenges and building high-impact systems.

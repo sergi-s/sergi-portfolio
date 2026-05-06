@@ -55,10 +55,10 @@ export const experiencesData = [
     date: "3/2024 - Present",
   },
   {
-    title: "Backend Software Engineer",
+    title: "Software Developer",
     location: "Nasdaq Verafin",
     description:
-      "Designed and maintained data pipelines processing Faster Payments and wire transactions at scale using Java and Scala. Built systems feeding fraud detection algorithms used by financial institutions, handling millions of transactions daily with high reliability requirements.",
+      "Optimized ACH transaction matching algorithm, improving processing speed by 23–27% across ~2,000 financial institutions.\nBuilt and scaled data pipelines processing millions of transactions daily for fraud detection systems.\nDesigned batch ingestion systems for RTP / FedNow using Scala, Spark, and AWS data lake architecture.\nImplemented distributed data workflows (S3, EMR, Lambda, SQS) with infrastructure managed via Terraform.",
     icon: React.createElement(FaShieldAlt),
     date: "1/2025 - Present",
   },
@@ -67,8 +67,8 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Credit Card Fraud Detection",
-    description: "Built ML models detecting fraudulent transactions on imbalanced datasets using SMOTE. Compared performance across Random Forest, Logistic Regression, and XGBoost, optimizing for recall to minimize false negatives in fraud classification.",
-    tags: ["Python", "ML", "SMOTE", "Pandas", "XGBoost", "scikit-learn"],
+    description: "Problem: Detect fraudulent transactions in highly imbalanced financial datasets.\nApproach: Applied resampling techniques (SMOTE, under/over-sampling). Trained and compared multiple models (Random Forest, Neural Networks). Optimized for recall to minimize false negatives.\nTech: Python, Scikit-learn, Pandas.\nResult: Achieved 99.83% F1-score with oversampled neural network and reduced false negative rate to near-zero while maintaining high precision.",
+    tags: ["Python", "Scikit-learn", "Pandas", "SMOTE", "Neural Networks"],
     imageUrl: 'https://i.ibb.co/ZJnXMPx/Screenshot-2024-08-23-at-12-49-25-PM.png',
     redirectTo: 'https://github.com/sergi-s/Credit-Card-fraud-detection'
   },
@@ -107,36 +107,24 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  // Backend & Data
-  "Java",
-  "Scala",
-  "SQL",
-  "Node.js",
-  "NestJS",
-  "Express",
-  // Databases & Data Infrastructure
-  "Postgres",
-  "DynamoDB",
-  "MongoDB",
-  "Redis",
-  "Spark",
-  "EMR",
-  // Frontend
-  "React",
-  "Next.js",
-  "TypeScript",
-  "JavaScript",
-  "Tailwind",
-  "Framer Motion",
-  // Cloud & DevOps
-  "AWS",
-  "Docker",
-  "Prisma",
-  "GraphQL",
-  "Microservices",
-  // Other Skills
-  "Python",
-  "Php",
-  "Git",
-  "GitHub Actions"
+  {
+    category: "Core",
+    items: ["Scala", "Java", "SQL"],
+  },
+  {
+    category: "Data & Distributed Systems",
+    items: ["Apache Spark", "EMR", "Data Lakes"],
+  },
+  {
+    category: "Cloud & Infrastructure",
+    items: ["AWS (S3, Lambda, SQS, RDS)", "Terraform"],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "NestJS", "Express"],
+  },
+  {
+    category: "Frontend (Familiar)",
+    items: ["React", "Next.js"],
+  },
 ] as const;

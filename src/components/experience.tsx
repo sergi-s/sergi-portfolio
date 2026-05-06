@@ -1,6 +1,7 @@
 // @ts-nocheck
 "use client"
 import React from 'react'
+import Image from 'next/image'
 import SectionHeading from './section-heading'
 import { useSectionInView } from '@/lib/hooks'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -36,11 +37,56 @@ export default function Experience() {
                         >
                             <h3 className='font-semibold capitalize'>{experience.title}</h3>
                             <p className='font-normal !mt-0 '>{experience.location}</p>
-                            <p className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>{experience.description}</p>
+                            <p className='!mt-1 !font-normal text-gray-700 dark:text-white/75 whitespace-pre-line'>{experience.description}</p>
                         </VerticalTimelineElement>
                     ))
                 }
             </VerticalTimeline>
+
+            <div className="mt-10 rounded-3xl border border-black/10 bg-white/80 p-6 dark:border-white/10 dark:bg-white/5">
+                <h3 className="text-xl font-semibold mb-6">Data Pipeline Architecture (Fraud Detection)</h3>
+                
+<div className="relative rounded-3xl border border-gray-300 bg-white dark:border-white/20 dark:bg-black/30 overflow-hidden">
+    
+    <Image 
+        src="/diagram-export-5-6-2026-2_31_52-PM.svg" 
+        alt="Data Pipeline System Architecture"
+        width={1591}
+        height={488}
+        unoptimized
+        className="w-full h-auto"
+    />
+
+    {/* Actual cut */}
+    <div className="absolute bottom-0 right-0 w-40 h-40 bg-white dark:bg-black rounded-tl-3xl" />
+</div>
+
+                <div className="mt-6">
+                    <p className="text-sm font-semibold text-gray-700 dark:text-white/90 mb-4">Tech Stack</p>
+                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+                        <div className="rounded-lg bg-gray-50 dark:bg-white/5 p-3">
+                            <p className="text-xs font-medium text-gray-500 dark:text-white/60 uppercase tracking-wide mb-1">Languages</p>
+                            <p className="text-sm text-gray-700 dark:text-white/90">Scala, Java</p>
+                        </div>
+                        <div className="rounded-lg bg-gray-50 dark:bg-white/5 p-3">
+                            <p className="text-xs font-medium text-gray-500 dark:text-white/60 uppercase tracking-wide mb-1">Processing</p>
+                            <p className="text-sm text-gray-700 dark:text-white/90">Apache Spark</p>
+                        </div>
+                        <div className="rounded-lg bg-gray-50 dark:bg-white/5 p-3">
+                            <p className="text-xs font-medium text-gray-500 dark:text-white/60 uppercase tracking-wide mb-1">Cloud</p>
+                            <p className="text-sm text-gray-700 dark:text-white/90">AWS S3, EMR</p>
+                        </div>
+                        <div className="rounded-lg bg-gray-50 dark:bg-white/5 p-3">
+                            <p className="text-xs font-medium text-gray-500 dark:text-white/60 uppercase tracking-wide mb-1">Infra</p>
+                            <p className="text-sm text-gray-700 dark:text-white/90">Terraform</p>
+                        </div>
+                        <div className="rounded-lg bg-gray-50 dark:bg-white/5 p-3">
+                            <p className="text-xs font-medium text-gray-500 dark:text-white/60 uppercase tracking-wide mb-1">Scale</p>
+                            <p className="text-sm text-gray-700 dark:text-white/90">Millions/day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
     )

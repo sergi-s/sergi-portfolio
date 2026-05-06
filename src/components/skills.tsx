@@ -14,21 +14,26 @@ export default function Skills() {
             id="skills">
 
             <SectionHeading>My Skills</SectionHeading>
-            <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
-                {
-                    skillsData.map((skill, index) => (
-                        <motion.li
-                            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
-                            key={index}
-                            variants={fadeInAnimationVariants}
-                            initial="initial"
-                            whileInView="animate"
-                            viewport={{ once: true }}
-                            custom={index}
-                        >{skill}</motion.li>
-                    ))
-                }
-            </ul>
+            <div className='grid gap-6 text-left sm:grid-cols-2'>
+                {skillsData.map((group, groupIndex) => (
+                    <motion.div
+                        key={group.category}
+                        className="rounded-3xl border border-black/10 bg-white/80 p-5 dark:border-white/10 dark:bg-white/5"
+                        variants={fadeInAnimationVariants}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{ once: true }}
+                        custom={groupIndex}
+                    >
+                        <h3 className='mb-3 text-lg font-semibold'>{group.category}</h3>
+                        <ul className='flex flex-wrap gap-2'>
+                            {group.items.map((skill, skillIndex) => (
+                                <li key={skillIndex} className='rounded-full bg-black/[0.85] px-3 py-1 text-sm uppercase tracking-wider text-white'>{skill}</li>
+                            ))}
+                        </ul>
+                    </motion.div>
+                ))}
+            </div>
         </section>
 
     )

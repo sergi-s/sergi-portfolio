@@ -17,9 +17,8 @@ export default function Contact() {
             <SectionHeading>My Contact</SectionHeading>
 
             <p className='text-gray-700 -mt-6 dark:text-white/80'>
-                Looking for backend or data engineering roles? I'd love to connect. Reach out at {" "}
-                <a className="underline" href="mailto:sergisamirboules@gmail.com">sergisamirboules@gmail.com</a> {" "}
-                or send me a message below.
+                Open to backend and data engineering roles focused on scalable systems and data-intensive applications. Let’s connect at {" "}
+                <a className="underline" href="mailto:sergisamirboules@gmail.com">sergisamirboules@gmail.com</a>.
             </p>
 
             <form className="mt-10 flex flex-col dark:text-black" action={async (formData) => {
