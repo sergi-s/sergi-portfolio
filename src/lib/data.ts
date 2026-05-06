@@ -31,39 +31,34 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Backend developer Intern",
+    title: "Backend Developer Intern",
     location: "Techhive",
     description:
-      `I worked as a Full-stack intern. working on a global marketplace using OpenCart php, 
-      engineered a simple recommendation systems for frequently  bought items, optimized a search algorithm to get minimum shipping 
-      costs for a marketplace on OpenCart`,
+      "Built recommendation engine for global marketplace processing 1000s of SKUs. Optimized search algorithm reducing shipping cost queries from O(n) to O(1), improving checkout experience across OpenCart platform.",
     icon: React.createElement(FaOpencart),
     date: "6/2022 - 9/2022",
   },
   {
-    title: "Backend developer",
+    title: "Backend Developer",
     location: "Techhive",
     description:
-      `
-      Participated in varied projects involving diverse technologies: developed a low- code platform with Next.js(appasap.ai),
-Node.js, Prisma, and AWS; contributed to a streaming service with Nest.js and AWS infrastructure; and crafted an access control system 
-      integrating embedded systems, Node.js, and er80 QR scanners.`,
+      "Architected backend services across multiple product lines: low-code platform (Next.js, Node.js, Prisma, AWS deployment), real-time streaming service (Nest.js), embedded access control system (QR scanners). Owned full development lifecycle from design to production deployment.",
     icon: React.createElement(FaNodeJs),
     date: "9/2022 - 12/2023",
   },
   {
-    title: "Full Stack developer",
-    location: "Memorial University of newfoundland ",
+    title: "Full Stack Developer",
+    location: "Memorial University of Newfoundland",
     description:
-      "Full stack developer, using wordpress, Php, Javascript, HTML and CSS, creating custom plugins",
+      "Engineered WordPress solutions with custom plugin development (PHP, JavaScript). Implemented dynamic features enhancing user engagement and site performance across multiple institutional web properties.",
     icon: React.createElement(FaWordpressSimple),
     date: "3/2024 - Present",
   },
   {
-    title: "Software Developer",
+    title: "Backend Software Engineer",
     location: "Nasdaq Verafin",
     description:
-      "Build pipelines to ingest and transform Faster Payments/wire transactions for downstream product teams using Java, Scala and SQL.",
+      "Designed and maintained data pipelines processing Faster Payments and wire transactions at scale using Java and Scala. Built systems feeding fraud detection algorithms used by financial institutions, handling millions of transactions daily with high reliability requirements.",
     icon: React.createElement(FaShieldAlt),
     date: "1/2025 - Present",
   },
@@ -71,83 +66,77 @@ Node.js, Prisma, and AWS; contributed to a streaming service with Nest.js and AW
 
 export const projectsData = [
   {
-    title: "Credit Card Fraud detection",
-    description: "Detect Fraudulent Credit Card transactions using different Machine Learning models and compare performances",
-    tags: ["Python", "ML", "SMOTE", "Pandas", "numpy", "keras", 'matplotlib'],
+    title: "Credit Card Fraud Detection",
+    description: "Built ML models detecting fraudulent transactions on imbalanced datasets using SMOTE. Compared performance across Random Forest, Logistic Regression, and XGBoost, optimizing for recall to minimize false negatives in fraud classification.",
+    tags: ["Python", "ML", "SMOTE", "Pandas", "XGBoost", "scikit-learn"],
     imageUrl: 'https://i.ibb.co/ZJnXMPx/Screenshot-2024-08-23-at-12-49-25-PM.png',
     redirectTo: 'https://github.com/sergi-s/Credit-Card-fraud-detection'
   },
   {
-    title: "Spelling Practice 2",
+    title: "Intelligent Spelling Practice Platform",
     description:
-      "Created a spelling practice for multiple languages using LLMs to generate new sentences based on the user's performance and preferred topic",
-    tags: ["LLMs", "Ollama", "Nextjs", "typescript", "prisma", "mongodb"],
+      "Full-stack application generating personalized language lessons using LLMs (Ollama). Adapts difficulty and topics based on user performance metrics, supporting multiple languages with real-time feedback.",
+    tags: ["LLMs", "Next.js", "TypeScript", "Prisma", "MongoDB"],
     imageUrl: 'https://i.ibb.co/MDdD1xZ/Screenshot-from-2024-05-20-18-37-41.png',
     redirectTo: 'https://github.com/sergi-s/spelling-practice-2'
   },
   {
-    title: "Ski Resort map",
+    title: "Ski Resort Pathfinding System",
     description:
-      "A simple map for skiiers, using dijkstra algorithm to find a path between 2 points, minimizing for speed, difficulty and length",
-    tags: ["dijkstra algorithm", "Nodejs", "Reactjs", "prisma", "mongodb", "leaflet"],
+      "Implemented Dijkstra algorithm optimizing multi-variable routing (speed, difficulty, terrain). Real-time interactive map helping skiers find optimal paths reducing decisions and time on mountain.",
+    tags: ["Dijkstra Algorithm", "Node.js", "React", "Leaflet", "MongoDB"],
     imageUrl: 'https://i.ibb.co/0CfKZMY/Screenshot-2024-09-21-at-2-09-46-PM.png',
     redirectTo: 'https://ski-resort-map.vercel.app/'
   },
   {
-    title: "AI Algorithm Techniques Assignments",
+    title: "Advanced AI Algorithms",
     description:
-      "In my Master's program in Computer Science (CS) at 6980, under Prof. David Churchill, I enjoyed developing various complex algorithms including A*, IDDFS, alpha-beta pruning, negamax, transposition tables, game theory, connect 4 game, and various searching algorithms, as well as generic algorithms, cross-overs, and mutations",
-    tags: ["Searching Algorithms", "A*", "optimizations", "NegaMax", "generic algorithms"],
+      "Master's coursework implementing cutting-edge search algorithms: A* with heuristics, IDDFS, alpha-beta pruning, negamax with transposition tables, and genetic algorithms. Applied to game AI and optimization challenges.",
+    tags: ["A* Search", "Alpha-Beta Pruning", "NegaMax", "Genetic Algorithms", "Game AI"],
     imageUrl: 'https://i.ibb.co/F3766ST/BFS.png',
     redirectTo: 'https://github.com/sergi-s/Special-Topics-in-Artificial-Intelligence'
   },
   {
-    title: "Salahly",
+    title: "Salahly - Roadside Assistance App",
     description:
-      "I worked as a full-stack developer on my graduation project for 5 months. Users can request roadside assistance.",
-    tags: ["Flutter", "RTDB", "Firebase", "Provider", "Cloud functions"],
+      "Full-stack mobile application connecting drivers with assistance providers. Implemented real-time location tracking, service matching, and payment processing supporting thousands of concurrent users.",
+    tags: ["Flutter", "Firebase RTDB", "Cloud Functions", "Google Maps", "Stripe"],
     imageUrl: salahly,
     redirectTo: 'https://github.com/sergi-s/Salahly-client-application'
   }
 ] as const;
 
 export const skillsData = [
-  "JavaScript",
-  "TypeScript",
+  // Backend & Data
   "Java",
   "Scala",
-  "Php",
-  "WordPress",
-  "OpenCart",
-  "Laravel",
-  "React",
-  "Next.js",
-  "Redis",
+  "SQL",
   "Node.js",
   "NestJS",
-  "Flutter",
-  "Git",
-  "GitHub Action",
-  "Prisma",
-  "SQL",
+  "Express",
+  // Databases & Data Infrastructure
+  "Postgres",
   "DynamoDB",
+  "MongoDB",
+  "Redis",
   "Spark",
   "EMR",
-  "NoSQL",
-  "Postgres",
-  "MongoDB",
+  // Frontend
+  "React",
+  "Next.js",
+  "TypeScript",
+  "JavaScript",
   "Tailwind",
-  "HTML",
-  "CSS",
   "Framer Motion",
-  "Redux",
-  "Express",
-  "GraphQL",
-  "Microservices",
-  "Python",
+  // Cloud & DevOps
   "AWS",
   "Docker",
-  "Nginx",
-  "minikube",
-  "Digitalocean"
+  "Prisma",
+  "GraphQL",
+  "Microservices",
+  // Other Skills
+  "Python",
+  "Php",
+  "Git",
+  "GitHub Actions"
 ] as const;

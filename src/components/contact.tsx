@@ -17,9 +17,9 @@ export default function Contact() {
             <SectionHeading>My Contact</SectionHeading>
 
             <p className='text-gray-700 -mt-6 dark:text-white/80'>
-                Please Contact me directly at {" "}
+                Looking for backend or data engineering roles? I'd love to connect. Reach out at {" "}
                 <a className="underline" href="mailto:sergisamirboules@gmail.com">sergisamirboules@gmail.com</a> {" "}
-                or through this form.
+                or send me a message below.
             </p>
 
             <form className="mt-10 flex flex-col dark:text-black" action={async (formData) => {

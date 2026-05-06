@@ -65,10 +65,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Sergi.</span> I'm a{" "}
-        <span className="font-bold">Software Developer at Nasdaq Verafin</span>, fighting financial crime.
-        <br /> I recently completed my Master's in Computer Science.
-        <br /> My core stack is primarily <span className="underline">Java, Scala & SQL</span>.
+        <span className="font-bold">Hello, I'm Sergi.</span> Backend engineer building{" "}
+        <span className="font-bold">high-scale data pipelines</span> for{" "}
+        <span className="font-bold">fraud detection systems</span> at Nasdaq Verafin.
+        <br /> I specialize in <span className="underline"> data infrastructure, and backend architecture</span>.
+        <br /> Master's in Computer Science from Memorial University.
       </motion.h1>
 
       <motion.div
@@ -85,7 +86,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          Let's build something impactful{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 

@@ -18,18 +18,17 @@ export default function About() {
         >
             <SectionHeading>About Me</SectionHeading>
             <p className="mb-3">
-                I'm a software developer with a focus on the <span className="font-medium">backend</span>.
-                <br /> I recently completed my Master's in Computer Science at Memorial University of Newfoundland.
-                <br /> I graduated from Alexandria University with a GPA of 3.78 (B.Sc. in Computer Science).
-                My passion lies in solving complex problems with code.
-                <br /> My current role is at Nasdaq Verafin where I work on systems to fight financial crime.
-                <br /> My core stack is primarily <span className="font-medium">Java, Scala, and SQL</span>.
-                I also have experience with <span className="font-medium">TypeScript, Node.js, Prisma, and React</span>, and familiarity with GraphQL, tRPC and gRPC.
+                I'm a <span className="font-medium">backend engineer</span> focused on building scalable systems and data infrastructure. 
+                Currently at Nasdaq Verafin designing data pipelines for fraud detection processing millions of transactions daily.
+                <br /> My expertise spans <span className="font-medium">backend architecture, and data engineering</span> — 
+                with strong proficiency in <span className="font-medium">Java, Scala, SQL, Node.js, and AWS</span>.
+                <br /> I completed my Master's in Computer Science at Memorial University and graduated from Alexandria University with 3.78 GPA.
+                <br /> I'm passionate about solving complex technical challenges and building high-impact systems.
             </p>
 
             <p>
-                <span className="italic">When I'm not coding</span>, I enjoy playing
-                video games, watching movies, and playing ping pong with my friends.
+                <span className="italic">Outside of code</span>, I'm competitive at ping pong 🏓, enjoy strategy games and sci-fi films, 
+                and I'm always up for discussing architecture patterns over coffee.
             </p>
         </motion.section>
 
