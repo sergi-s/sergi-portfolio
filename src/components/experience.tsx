@@ -56,7 +56,9 @@ export default function Experience() {
         unoptimized
         className="w-full h-auto"
     />
-
+    <p className="p-4 text-sm text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto">
+        Scalable batch data pipeline for ingesting, transforming, and exporting financial transactions for fraud detection systems.
+    </p>
     {/* Actual cut */}
     <div className="absolute bottom-0 right-0 w-40 h-40 bg-white dark:bg-black rounded-tl-3xl" />
 </div>
